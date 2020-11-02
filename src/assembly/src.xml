@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<assembly
+  xmlns="http://maven.apache.org/ASSEMBLY/2.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/ASSEMBLY/2.0.0
+  http://maven.apache.org/xsd/assembly-2.0.0.xsd"
+>
+
+<!--
+    for maven-assembly-plugin
+-->
+
+    <id>src</id>
+
+    <formats>
+        <format>tar.gz</format>
+        <format>zip</format>
+    </formats>
+
+    <fileSets>
+        <fileSet>
+            <directory>${project.basedir}</directory>
+            <includes>
+                <include>*.xml</include>
+                <include>*.txt</include>
+                <include>*.md</include>
+            </includes>
+            <excludes>
+                <exclude>nb-configuration.xml</exclude>
+                <exclude>nbactions.xml</exclude>
+            </excludes>
+            <useDefaultExcludes>true</useDefaultExcludes>
+        </fileSet>
+        <fileSet>
+            <directory>${project.basedir}/src</directory>
+            <useDefaultExcludes>true</useDefaultExcludes>
+        </fileSet>
+        <fileSet>
+            <directory>${project.basedir}/config</directory>
+            <useDefaultExcludes>true</useDefaultExcludes>
+        </fileSet>
+    </fileSets>
+
+</assembly>
+
+<!-- EOF -->

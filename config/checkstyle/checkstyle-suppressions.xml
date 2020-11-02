@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE suppressions PUBLIC
+    "-//Checkstyle//DTD SuppressionFilter Configuration 1.2//EN"
+    "https://checkstyle.org/dtds/suppressions_1_2.dtd">
+
+<!--
+    Checkstyle suppressions
+    for Checkstyle 8.29 or later
+
+    [ https://checkstyle.org/ ]
+
+    Copyright(c) 2019 olyutorskii
+-->
+
+
+<suppressions>
+
+    <!-- Annotations -->
+    <suppress files="" checks="AnnotationOnSameLine" />
+
+    <!-- Class Design -->
+    <suppress files="" checks="DesignForExtension" />
+
+    <!-- Coding -->
+    <suppress files="" checks="AvoidNoArgumentSuperConstructorCall" />
+    <suppress files="" checks="ExplicitInitialization" />
+    <suppress files="" checks="FinalLocalVariable" />
+    <suppress files="" checks="MagicNumber" />
+    <suppress files="" checks="NoArrayTrailingComma" />
+    <suppress files="" checks="NoEnumTrailingComma" />
+
+    <!-- Imports -->
+    <suppress files="" checks="ImportControl" />
+
+    <!-- Javadoc Comments -->
+    <suppress files="" checks="SummaryJavadocCheck" />
+
+    <!-- Miscellaneous -->
+    <suppress files="" checks="FinalParameters" />
+    <suppress files="" checks="TrailingComment" />
+
+    <!-- Modifier -->
+    <suppress files="" checks="RedundantModifier" />
+
+    <!-- Whitespace -->
+    <suppress files="" checks="ParenPad" />
+    <suppress files="" checks="SingleSpaceSeparator" />
+
+</suppressions>
+
+
+<!-- EOF -->
