@@ -1,0 +1,19 @@
+# Travis CI
+
+language: java
+
+sudo: false
+
+jdk:
+  - openjdk15
+  - openjdk14
+  - openjdk13
+  - openjdk12
+  - openjdk11
+  - openjdk8
+
+cache:
+ directories:
+   - $HOME/.m2
+
+# EOF
