@@ -7,6 +7,30 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+- add foo/bar
+
+
+## [0.0.3] - 2020-11-03
+
+### Added
+- Added something.
+
+### Changed
+- Changed something.
+
+### Removed
+- Removed something.
+
+### Fixed
+- Fixed something.
+
+### Deprecated
+- Deprecated something soon.
+
+### Security
+- Danger! something.
+
 
 ## [0.0.1] - 2020-11-03
 
@@ -14,7 +38,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Initial Release
 
 
-[Unreleased]: https://github.com/olyutorskii/GhMvnLibTmpl/compare/v0.0.1...HEAD
+[Unreleased]: https://github.com/olyutorskii/GhMvnLibTmpl/compare/v0.0.3...HEAD
+[0.0.3]: https://github.com/olyutorskii/GhMvnLibTmpl/compare/v0.0.1...v0.0.3
 [0.0.1]: https://github.com/olyutorskii/GhMvnLibTmpl/releases/tag/v0.0.1
 
 

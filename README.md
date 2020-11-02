@@ -12,6 +12,8 @@ that supports BLAHBLAH.
 * Yes, this is a Java-library template project
 with JDK + Maven + Git + GitHub (and Netbeans etc.).
 
+* [Creating a repository from a template](https://docs.github.com/en/free-pro-team@latest/github/creating-cloning-and-archiving-repositories/creating-a-repository-from-a-template)
+
 
 ## How to build ##
 
