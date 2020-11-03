@@ -22,7 +22,7 @@ and JDK 1.8+ to be built.
 
 * GhMvnLibTmpl runtime does not depend on any other library at all.
 Just compile Java sources under `src/main/java/`
-if you don't use Maven nor JUnit.
+if you don't use Maven nor JUnit nor resource-access.
 
 
 ## License ##
