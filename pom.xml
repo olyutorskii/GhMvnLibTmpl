@@ -16,7 +16,7 @@
     <groupId>io.github.olyutorskii</groupId>
     <artifactId>ghmvnlibtmpl</artifactId>
 
-    <version>0.0.3</version>
+    <version>0.0.5</version>
 
     <packaging>jar</packaging>
     <name>GhMvnLibTmpl</name>
@@ -237,7 +237,7 @@
                         <dependency>
                             <groupId>com.puppycrawl.tools</groupId>
                             <artifactId>checkstyle</artifactId>
-                            <version>8.36.2</version>
+                            <version>8.37</version>
                         </dependency>
                     </dependencies>
                 </plugin>

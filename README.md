@@ -1,6 +1,8 @@
 # GhMvnLibTmpl #
 
+![Java CI with Maven](https://github.com/olyutorskii/GhMvnLibTmpl/workflows/Java%20CI%20with%20Maven/badge.svg)
 [![Build Status](https://travis-ci.org/olyutorskii/GhMvnLibTmpl.svg?branch=develop)](https://travis-ci.org/olyutorskii/GhMvnLibTmpl)
+![CodeQL](https://github.com/olyutorskii/GhMvnLibTmpl/workflows/CodeQL/badge.svg)
 
 -----------------------------------------------------------------------
 
@@ -22,7 +24,7 @@ and JDK 1.8+ to be built.
 
 * GhMvnLibTmpl runtime does not depend on any other library at all.
 Just compile Java sources under `src/main/java/`
-if you don't use Maven nor JUnit.
+if you don't use Maven nor JUnit nor resource-access.
 
 
 ## License ##
