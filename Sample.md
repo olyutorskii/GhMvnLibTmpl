@@ -40,9 +40,7 @@ I love [GitHub Pages](https://pages.github.com/) too.
 
 I wrote [License file](./LICENSE.txt).
 
-<img src="./src/main/javadoc/io/github/olyutorskii/ghmvnlibtmpl/doc-files/bluedia.png" >
-
-Issue #1
+![alt text](./src/main/javadoc/io/github/olyutorskii/ghmvnlibtmpl/doc-files/bluedia.png "image title")
 
 ***
 
@@ -54,7 +52,7 @@ Issue #1
 1. list2
 1. list3
 
-1. list1
+1) list1
    - list2
      - list3
 
