@@ -4,10 +4,12 @@ language: java
 
 jdk:
   - openjdk15
-  - openjdk14
-  - openjdk13
-  - openjdk12
+# - openjdk14
+# - openjdk13
+# - openjdk12
   - openjdk11
+# - openjdk10
+# - openjdk9
   - openjdk8
 
 cache:
