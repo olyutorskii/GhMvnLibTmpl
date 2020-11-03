@@ -2,6 +2,8 @@
 - [Basic writing and formatting syntax](https://docs.github.com/en/free-pro-team@latest/github/writing-on-github/basic-writing-and-formatting-syntax)
 - [GitHub Flavored Markdown Spec](https://github.github.com/gfm/)
 
+***
+
 hairline
 ***
 
@@ -38,7 +40,9 @@ println();
 
 I love [GitHub Pages](https://pages.github.com/) too.
 
-I wrote [License file](./License.txt).
+I wrote [License file](./LICENSE.txt).
+
+![alt text](./src/main/javadoc/io/github/olyutorskii/ghmvnlibtmpl/doc-files/bluedia.png "image title")
 
 ***
 
@@ -47,10 +51,10 @@ I wrote [License file](./License.txt).
 * list3
 
 1. list1
-2. list2
-3. list3
+1. list2
+1. list3
 
-1. list1
+1) list1
    - list2
      - list3
 
