@@ -42,6 +42,7 @@
     <rule ref="category/java/design.xml" >
         <exclude name="LawOfDemeter" />
         <exclude name="LoosePackageCoupling" />
+        <exclude name="AvoidUncheckedExceptionsInSignatures" />
     </rule>
 
     <rule ref="category/java/documentation.xml" />
