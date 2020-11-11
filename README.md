@@ -34,7 +34,7 @@ if you don't use Maven nor JUnit nor resource-access.
 
 ## Project founder ##
 
-* By [olyutorskii](https://github.com/olyutorskii) at 2020
+* By [Olyutorskii](https://github.com/olyutorskii) at 2020
 
 
 ## Key technology ##

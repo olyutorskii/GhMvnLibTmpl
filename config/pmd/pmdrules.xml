@@ -42,6 +42,7 @@
     <rule ref="category/java/design.xml" >
         <exclude name="LawOfDemeter" />
         <exclude name="LoosePackageCoupling" />
+        <exclude name="AvoidUncheckedExceptionsInSignatures" />
     </rule>
 
     <rule ref="category/java/documentation.xml" />
@@ -53,6 +54,7 @@
     <rule ref="category/java/documentation.xml/CommentSize" >
         <properties>
             <property name="maxLines" value="25"/>
+            <property name="maxLineLength" value="100"/>
         </properties>
     </rule>
 
