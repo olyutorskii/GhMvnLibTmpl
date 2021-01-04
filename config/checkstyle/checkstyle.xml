@@ -6,7 +6,7 @@
 
 <!--
     Checkstyle modules
-    for Checkstyle 8.38 or later
+    for Checkstyle 8.39 or later
 
     [ https://checkstyle.org/ ]
 
@@ -179,6 +179,7 @@
         <module name="IllegalType" />
         <module name="InnerAssignment" />
         <module name="MagicNumber" />
+        <module name="MatchXpath" />
         <module name="MissingCtor" />
         <module name="MissingSwitchDefault" />
         <module name="ModifiedControlVariable" />
