@@ -1,7 +1,7 @@
 # GhMvnLibTmpl #
 
 ![Java CI with Maven](https://github.com/olyutorskii/GhMvnLibTmpl/workflows/Java%20CI%20with%20Maven/badge.svg)
-[![Build Status](https://travis-ci.org/olyutorskii/GhMvnLibTmpl.svg?branch=develop)](https://travis-ci.org/olyutorskii/GhMvnLibTmpl)
+[![Build Status](https://travis-ci.com/olyutorskii/GhMvnLibTmpl.svg?branch=develop)](https://travis-ci.com/olyutorskii/GhMvnLibTmpl)
 ![CodeQL](https://github.com/olyutorskii/GhMvnLibTmpl/workflows/CodeQL/badge.svg)
 
 -----------------------------------------------------------------------
@@ -34,7 +34,7 @@ if you don't use Maven nor JUnit nor resource-access.
 
 ## Project founder ##
 
-* By [olyutorskii](https://github.com/olyutorskii) at 2020
+* By [Olyutorskii](https://github.com/olyutorskii) at 2020
 
 
 ## Key technology ##
