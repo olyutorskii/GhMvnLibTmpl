@@ -23,7 +23,6 @@
 
     <rule ref="category/java/codestyle.xml" >
         <exclude name="CommentDefaultAccessModifier" />
-        <exclude name="DefaultPackage" />
         <exclude name="LocalVariableCouldBeFinal" />
         <exclude name="MethodArgumentCouldBeFinal" />
         <exclude name="OnlyOneReturn" />
