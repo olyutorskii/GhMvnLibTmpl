@@ -1,7 +1,7 @@
 # GhMvnLibTmpl #
 
 ![Java CI with Maven](https://github.com/olyutorskii/GhMvnLibTmpl/workflows/Java%20CI%20with%20Maven/badge.svg)
-[![Build Status](https://travis-ci.com/olyutorskii/GhMvnLibTmpl.svg?branch=develop)](https://travis-ci.com/olyutorskii/GhMvnLibTmpl)
+[![Build Status](https://api.travis-ci.com/olyutorskii/GhMvnLibTmpl.svg?branch=develop)](https://app.travis-ci.com/github/olyutorskii/GhMvnLibTmpl)
 ![CodeQL](https://github.com/olyutorskii/GhMvnLibTmpl/workflows/CodeQL/badge.svg)
 
 -----------------------------------------------------------------------
