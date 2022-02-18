@@ -87,6 +87,9 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
+        <!-- MJAVADOC-700 -->
+        <sourcepath>${basedir}/src/main/java</sourcepath>
+
         <!-- DO NOT USE ${locale} with site-plugin -->
         <site.locales>en</site.locales>
         <javadoc.locale>en</javadoc.locale>
@@ -202,7 +205,7 @@
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-site-plugin</artifactId>
-                    <version>3.10.0</version>
+                    <version>3.11.0</version>
                 </plugin>
 
                 <plugin>
@@ -220,7 +223,7 @@
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-javadoc-plugin</artifactId>
-                    <version>3.2.0</version>
+                    <version>3.3.2</version>
                 </plugin>
 
                 <plugin>
