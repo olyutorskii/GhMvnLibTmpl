@@ -10,6 +10,7 @@ on:
     branches: [ main, develop ]
 
 jobs:
+
   build:
 
     runs-on: ubuntu-latest
@@ -32,7 +33,32 @@ jobs:
         key: ${{ runner.os }}-m2-${{ hashFiles('**/pom.xml') }}
         restore-keys: ${{ runner.os }}-m2
     - name: Build with Maven
-      run: mvn --show-version -B package site --file pom.xml
+      run: mvn --show-version -B package --file pom.xml
+
+
+  buildSite:
+
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        java: [ 11, 17 ]
+    name: Java ${{ matrix.java }} sample
+    steps:
+    - uses: actions/checkout@v3.0.2
+    - name: Set up JDK
+      uses: actions/setup-java@v3
+      with:
+        distribution: 'adopt'
+        java-version: ${{ matrix.java }}
+    - name: Cache Maven packages
+      uses: actions/cache@v3
+      with:
+        path: ~/.m2
+        key: ${{ runner.os }}-m2-${{ hashFiles('**/pom.xml') }}
+        restore-keys: ${{ runner.os }}-m2
+    - name: Build with Maven
+      run: mvn --show-version -B site --file pom.xml
 
 
 ### EOF ###
