@@ -18,7 +18,7 @@ jobs:
     strategy:
       matrix:
         java: [ 8, 11, 17 ]
-    name: Java ${{ matrix.java }} sample
+    name: Java ${{ matrix.java }} building
     steps:
     - uses: actions/checkout@v3.0.2
     - name: Set up JDK
@@ -43,7 +43,7 @@ jobs:
     strategy:
       matrix:
         java: [ 11, 17 ]
-    name: Java ${{ matrix.java }} sample
+    name: Java ${{ matrix.java }} siting
     steps:
     - uses: actions/checkout@v3.0.2
     - name: Set up JDK
