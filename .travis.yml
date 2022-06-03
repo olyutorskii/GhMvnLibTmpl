@@ -2,6 +2,8 @@
 
 language: java
 
+dist: bionic
+
 jdk:
   - openjdk17
 # - openjdk16
