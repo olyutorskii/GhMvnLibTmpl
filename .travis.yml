@@ -1,10 +1,14 @@
 # Travis CI
+#   https://www.travis-ci.com/
+#   https://docs.travis-ci.com/user/languages/java/
 
 language: java
 
-dist: bionic
+# dist: focal
+# dist: bionic
 
 jdk:
+# - openjdk18
   - openjdk17
 # - openjdk16
 # - openjdk15
