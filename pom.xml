@@ -205,7 +205,7 @@
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-site-plugin</artifactId>
-                    <version>4.0.0-M1</version>
+                    <version>4.0.0-M2</version>
                 </plugin>
 
                 <plugin>
@@ -240,7 +240,7 @@
                         <dependency>
                             <groupId>com.puppycrawl.tools</groupId>
                             <artifactId>checkstyle</artifactId>
-                            <version>10.3</version>
+                            <version>10.3.1</version>
                         </dependency>
                     </dependencies>
                 </plugin>
@@ -253,12 +253,12 @@
                         <dependency>
                             <groupId>net.sourceforge.pmd</groupId>
                             <artifactId>pmd-core</artifactId>
-                            <version>6.46.0</version>
+                            <version>6.47.0</version>
                         </dependency>
                         <dependency>
                             <groupId>net.sourceforge.pmd</groupId>
                             <artifactId>pmd-java</artifactId>
-                            <version>6.46.0</version>
+                            <version>6.47.0</version>
                         </dependency>
                     </dependencies>
                 </plugin>
@@ -271,7 +271,7 @@
                         <dependency>
                             <groupId>com.github.spotbugs</groupId>
                             <artifactId>spotbugs</artifactId>
-                            <version>4.7.0</version>
+                            <version>4.7.1</version>
                         </dependency>
                     </dependencies>
                 </plugin>
