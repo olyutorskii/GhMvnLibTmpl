@@ -27,11 +27,19 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout
         uses: actions/checkout@v3
+      - name: Set up JDK
+        uses: actions/setup-java@v3
+        with:
+          distribution: 'adopt'
+          java-version: 17        
       - name: Setup Pages
         uses: actions/configure-pages@v2
+      - name: Build with Maven
+        run: mvn --show-version -B site --file pom.xml        
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
