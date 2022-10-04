@@ -1,7 +1,6 @@
 # GhMvnLibTmpl #
 
 [![Java CI with Maven](https://github.com/olyutorskii/GhMvnLibTmpl/actions/workflows/maven.yml/badge.svg)](https://github.com/olyutorskii/GhMvnLibTmpl/actions/workflows/maven.yml)
-[![Build Status](https://api.travis-ci.com/olyutorskii/GhMvnLibTmpl.svg?branch=develop)](https://app.travis-ci.com/github/olyutorskii/GhMvnLibTmpl)
 [![CodeQL](https://github.com/olyutorskii/GhMvnLibTmpl/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/olyutorskii/GhMvnLibTmpl/actions/workflows/codeql-analysis.yml)
 
 -----------------------------------------------------------------------
@@ -15,6 +14,11 @@ that supports BLAHBLAH.
 with JDK + Maven + Git + GitHub (and Netbeans etc.).
 
 * [Creating a repository from a template](https://docs.github.com/en/free-pro-team@latest/github/creating-cloning-and-archiving-repositories/creating-a-repository-from-a-template)
+
+
+## API document ##
+* [API docs](https://olyutorskii.github.io/GhMvnLibTmpl/apidocs/index.html)
+* [Maven report](https://olyutorskii.github.io/GhMvnLibTmpl/)
 
 
 ## How to build ##
