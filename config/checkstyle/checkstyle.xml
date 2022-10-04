@@ -6,7 +6,7 @@
 
 <!--
     Checkstyle modules
-    for Checkstyle 8.40 or later
+    for Checkstyle 8.45 or later
 
     [ https://checkstyle.org/ ]
 
@@ -211,6 +211,7 @@
         <module name="UnnecessarySemicolonAfterTypeMemberDeclaration" />
         <module name="UnnecessarySemicolonInEnumeration" />
         <module name="UnnecessarySemicolonInTryWithResources" />
+        <module name="UnusedLocalVariable" />
         <module name="VariableDeclarationUsageDistance" />
 
 
@@ -368,6 +369,7 @@
         <module name="NoWhitespaceBefore">
             <property name="allowLineBreaks" value="true" />
         </module>
+        <module name="NoWhitespaceBeforeCaseDefaultColon" />
         <module name="OperatorWrap" />
         <module name="ParenPad" />
         <module name="SeparatorWrap" />
