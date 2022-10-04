@@ -54,6 +54,12 @@ jobs:
       - name: Build document with Maven
         run: mvn --show-version -B site --file pom.xml
 
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v1
+        with:
+          # Upload Maven-report repository
+          path: './target/site/'
+
 
   # Single deploy job since we're just deploying
   deploy:
@@ -66,12 +72,6 @@ jobs:
     needs: build
 
     steps:
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v1
-        with:
-          # Upload Maven-report repository
-          path: './target/site/'
-
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v1
