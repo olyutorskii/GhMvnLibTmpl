@@ -90,8 +90,7 @@
         <!-- MJAVADOC-700 -->
         <sourcepath>${basedir}/src/main/java</sourcepath>
 
-        <!-- DO NOT USE ${locale} with site-plugin -->
-        <site.locales>en</site.locales>
+        <locale>en</locale>
         <javadoc.locale>en</javadoc.locale>
         <spotbugs.jvmArgs>-Duser.language=en</spotbugs.jvmArgs>
 
@@ -398,9 +397,6 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-site-plugin</artifactId>
-                <configuration>
-                    <locales>${site.locales}</locales>
-                </configuration>
             </plugin>
 
 
@@ -410,7 +406,6 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-javadoc-plugin</artifactId>
                 <configuration>
-                    <locale>${javadoc.locale}</locale>
                     <!-- for JDK11 javadoc -->
                     <additionalJOption>-J-Duser.language=${javadoc.locale}</additionalJOption>
                     <source>${maven.compiler.source}</source>
@@ -535,7 +530,6 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-javadoc-plugin</artifactId>
                 <configuration>
-                    <locale>${javadoc.locale}</locale>
                     <!-- for JDK11 javadoc -->
                     <additionalJOption>-J-Duser.language=${javadoc.locale}</additionalJOption>
                     <source>${maven.compiler.source}</source>
