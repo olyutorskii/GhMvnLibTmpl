@@ -87,9 +87,6 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
-        <!-- MJAVADOC-700 -->
-        <sourcepath>${basedir}/src/main/java</sourcepath>
-
         <locale>en</locale>
         <javadoc.locale>en</javadoc.locale>
         <spotbugs.jvmArgs>-Duser.language=en</spotbugs.jvmArgs>
