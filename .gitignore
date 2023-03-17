@@ -12,6 +12,7 @@
 *.swp
 *.orig
 # core
+*.log
 
 
 ### macOS
@@ -30,6 +31,7 @@ Thumbs.db
 
 ### JDK
 
+*.class
 hs_err_pid*
 
 
@@ -69,9 +71,25 @@ hs_err_pid*
 *.ipr
 
 
+### BlueJ files
+
+*.ctxt
+
+
 ### Visual Studio Code
 
 /.vscode/
+
+
+### Package Files
+
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
 
 
 ### EOF ###

@@ -28,9 +28,7 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
-        with:
-          ref: 'main'
+        uses: actions/checkout@v3.4.0
 
       - name: Set up JDK
         uses: actions/setup-java@v3
@@ -39,7 +37,7 @@ jobs:
           java-version: 17
 
       - name: Setup Pages
-        uses: actions/configure-pages@v2
+        uses: actions/configure-pages@v3
 
       - name: Cache Maven packages
         uses: actions/cache@v3
