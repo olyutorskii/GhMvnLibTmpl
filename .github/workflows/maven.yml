@@ -19,7 +19,7 @@ jobs:
 
     strategy:
       matrix:
-        java: [ 8, 11, 17 ]
+        java: [ 8, 11, 17, 20 ]
     name: Java ${{ matrix.java }} building
     steps:
     - uses: actions/checkout@v3.5.0
@@ -44,7 +44,7 @@ jobs:
 
     strategy:
       matrix:
-        java: [ 11, 17 ]
+        java: [ 11, 17, 20 ]
     name: Java ${{ matrix.java }} siting
     steps:
     - uses: actions/checkout@v3.5.0
