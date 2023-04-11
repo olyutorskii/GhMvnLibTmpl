@@ -17,23 +17,6 @@ jobs:
 
     runs-on: ubuntu-latest
 
-    name: Java 8 building
-    steps:
-    - uses: actions/checkout@v3
-    - name: Set up JDK
-      uses: actions/setup-java@v3
-      with:
-        distribution: 'temurin'
-        java-version: '8'
-        cache: 'maven'
-    - name: Build with Maven
-      run: mvn --show-version -B package --file pom.xml
-
-
-  buildSite:
-
-    runs-on: ubuntu-latest
-
     strategy:
       matrix:
         java: [ 11, 17 ]
@@ -47,7 +30,25 @@ jobs:
         java-version: ${{ matrix.java }}
         cache: 'maven'
     - name: Build with Maven
-      run: mvn --show-version -B package site --file pom.xml
+      run: mvn --show-version --batch-mode package site --file pom.xml
 
+
+  build8:
+
+    needs: build
+
+    runs-on: ubuntu-latest
+
+    name: Java 8 building
+    steps:
+    - uses: actions/checkout@v3
+    - name: Set up JDK
+      uses: actions/setup-java@v3
+      with:
+        distribution: 'temurin'
+        java-version: '8'
+        cache: 'maven'
+    - name: Build with Maven
+      run: mvn --show-version --batch-mode package --file pom.xml
 
 ### EOF ###
