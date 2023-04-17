@@ -85,4 +85,24 @@ public class JavaDoc {
         return super.toString();
     }
 
+    /**
+     * public javadoc
+     * with no description for @param warning.
+     * @param publicArg
+     */
+    public void warnPublic(int publicArg) {
+        warnPrivate(publicArg);
+        return;
+    }
+
+    /**
+     * private javadoc
+     * with no description for @param warning.
+     * @param privateArg
+     */
+    private void warnPrivate(int privateArg) {
+        assert privateArg == privateArg;
+        return;
+    }
+
 }

@@ -90,6 +90,7 @@
         <locale>en</locale>
         <javadoc.locale>en</javadoc.locale>
         <spotbugs.jvmArgs>-Duser.language=en</spotbugs.jvmArgs>
+        <show>protected</show>
 
         <checkstyle.config.location>config/checkstyle/checkstyle.xml</checkstyle.config.location>
         <checkstyle.suppressions.location>config/checkstyle/checkstyle-suppressions.xml</checkstyle.suppressions.location>
@@ -412,7 +413,6 @@
                     <author>false</author>
                     <quiet>true</quiet>
                     <doclint>all</doclint>
-                    <show>protected</show>
                 </configuration>
             </plugin>
 
@@ -536,7 +536,6 @@
                     <author>false</author>
                     <quiet>true</quiet>
                     <doclint>all</doclint>
-                    <show>protected</show>
                 </configuration>
                 <reportSets>
                     <reportSet>
