@@ -6,7 +6,7 @@
 
 <!--
     Checkstyle modules
-    for Checkstyle 8.45 or later
+    for Checkstyle 10.10.0 or later
 
     [ https://checkstyle.org/ ]
 
@@ -30,6 +30,7 @@
     <!--module name="SuppressionFilter" /-->
     <!--module name="SuppressionSingleFilter" /-->
     <module name="SuppressWarningsFilter" />
+    <module name="SuppressWithNearbyTextFilter" />
     <module name="SuppressWithPlainTextCommentFilter" />
 
 
