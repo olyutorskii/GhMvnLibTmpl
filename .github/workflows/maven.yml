@@ -22,7 +22,7 @@ jobs:
         java: [ 11, 17, 20 ]
     name: Java ${{ matrix.java }} building
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v4
     - name: Set up JDK
       uses: actions/setup-java@v3
       with:
@@ -41,7 +41,7 @@ jobs:
 
     name: Java 8 building
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v4
     - name: Set up JDK
       uses: actions/setup-java@v3
       with:
