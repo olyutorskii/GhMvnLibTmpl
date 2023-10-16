@@ -62,7 +62,7 @@
     <modules/>
 
     <scm>
-        <connection>scm:git:git://github.com/olyutorskii/GhMvnLibTmpl.git</connection>
+        <connection>scm:git:https://github.com/olyutorskii/GhMvnLibTmpl.git</connection>
         <developerConnection>scm:git:git@github.com:olyutorskii/GhMvnLibTmpl.git</developerConnection>
         <url>https://github.com/olyutorskii/GhMvnLibTmpl</url>
     </scm>
