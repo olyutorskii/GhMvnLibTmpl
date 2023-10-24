@@ -18,8 +18,9 @@ jobs:
     runs-on: ubuntu-latest
 
     strategy:
+      max-parallel: 1
       matrix:
-        java: [ 11, 17, 21 ]
+        java: [ 8, 11, 17, 21 ]
     name: Java ${{ matrix.java }} building
     steps:
     - uses: actions/checkout@v4
@@ -31,24 +32,5 @@ jobs:
         cache: 'maven'
     - name: Build with Maven
       run: mvn --show-version --batch-mode -Dshow=private package site --file pom.xml
-
-
-  build8:
-
-    needs: build
-
-    runs-on: ubuntu-latest
-
-    name: Java 8 building
-    steps:
-    - uses: actions/checkout@v4
-    - name: Set up JDK
-      uses: actions/setup-java@v3
-      with:
-        distribution: 'temurin'
-        java-version: '8'
-        cache: 'maven'
-    - name: Build with Maven
-      run: mvn --show-version --batch-mode package --file pom.xml
 
 ### EOF ###
