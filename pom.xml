@@ -568,15 +568,8 @@
             </plugin>
 
             <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-checkstyle-plugin</artifactId>
-                <reportSets>
-                    <reportSet>
-                        <reports>
-                            <report>checkstyle</report>
-                        </reports>
-                    </reportSet>
-                </reportSets>
+                <groupId>com.github.spotbugs</groupId>
+                <artifactId>spotbugs-maven-plugin</artifactId>
             </plugin>
 
             <plugin>
@@ -597,11 +590,6 @@
                 </reportSets>
             </plugin>
 
-            <plugin>
-                <groupId>com.github.spotbugs</groupId>
-                <artifactId>spotbugs-maven-plugin</artifactId>
-            </plugin>
-
         </plugins>
 
     </reporting>
@@ -616,6 +604,29 @@
             <properties>
                 <maven.compiler.release>${req.jdk}</maven.compiler.release>
             </properties>
+        </profile>
+
+        <profile>
+            <id>jdk11later</id>
+            <activation>
+                <jdk>[11</jdk>
+            </activation>
+            <reporting>
+                <plugins>
+                    <!-- Checkstyle 10.0 require JDK11+ -->
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-checkstyle-plugin</artifactId>
+                        <reportSets>
+                            <reportSet>
+                                <reports>
+                                    <report>checkstyle</report>
+                                </reports>
+                            </reportSet>
+                        </reportSets>
+                    </plugin>
+                </plugins>
+            </reporting>
         </profile>
 
         <profile>
