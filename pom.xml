@@ -76,9 +76,9 @@
     <distributionManagement/>
 
     <properties>
-        <maven.compiler.source>8</maven.compiler.source>
-        <maven.compiler.target>8</maven.compiler.target>
-        <!--maven.compiler.release>8</maven.compiler.release-->
+        <req.jdk>8</req.jdk>
+        <maven.compiler.source>${req.jdk}</maven.compiler.source>
+        <maven.compiler.target>${req.jdk}</maven.compiler.target>
 
         <maven.compiler.showDeprecation>true</maven.compiler.showDeprecation>
         <maven.compiler.showWarnings>true</maven.compiler.showWarnings>
@@ -90,6 +90,7 @@
         <locale>en</locale>
         <javadoc.locale>en</javadoc.locale>
         <spotbugs.jvmArgs>-Duser.language=en</spotbugs.jvmArgs>
+
         <show>protected</show>
 
         <checkstyle.config.location>config/checkstyle/checkstyle.xml</checkstyle.config.location>
@@ -108,9 +109,9 @@
     <dependencies>
 
         <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>4.13.2</version>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter</artifactId>
+            <version>5.10.0</version>
             <scope>test</scope>
         </dependency>
 
@@ -341,8 +342,6 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <configuration>
-                    <source>8</source>  <!-- for NetBeans IDE -->
-                    <target>8</target>
                     <compilerArgs>
                         <arg>-Xlint</arg>
                     </compilerArgs>
@@ -608,6 +607,16 @@
     </reporting>
 
     <profiles>
+
+        <profile>
+            <id>jdk9later</id>
+            <activation>
+                <jdk>[9</jdk>
+            </activation>
+            <properties>
+                <maven.compiler.release>${req.jdk}</maven.compiler.release>
+            </properties>
+        </profile>
 
         <profile>
             <id>release-profile</id>
