@@ -596,16 +596,19 @@
 
     <profiles>
 
+        <!-- JDK9 or later -->
         <profile>
             <id>jdk9later</id>
             <activation>
                 <jdk>[9</jdk>
             </activation>
             <properties>
+                <!-- -release option(javac) require JDK9+ -->
                 <maven.compiler.release>${req.jdk}</maven.compiler.release>
             </properties>
         </profile>
 
+        <!-- JDK11 or later -->
         <profile>
             <id>jdk11later</id>
             <activation>
@@ -613,7 +616,7 @@
             </activation>
             <reporting>
                 <plugins>
-                    <!-- Checkstyle 10.0 require JDK11+ -->
+                    <!-- Checkstyle 10.0+ require JDK11+ -->
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-checkstyle-plugin</artifactId>
@@ -629,15 +632,35 @@
             </reporting>
         </profile>
 
+        <!-- refer library from GitHub Package with GitHub-action-build-workflow -->
         <profile>
-            <id>release-profile</id>
+            <id>refghpkg</id>
 
-            <activation>
-                <property>
-                    <name>performRelease</name>
-                    <value>true</value>
-                </property>
-            </activation>
+            <repositories>
+                <!--
+                <repository>
+                    <id>ghpkg-XXX</id>
+                    <name>GitHub Packages (XXX)</name>
+                    <url>https://maven.pkg.github.com/olyutorskii/XXX</url>
+                </repository>
+                -->
+            </repositories>
+
+        </profile>
+
+        <!-- release to GitHub-package by GitHub-action-deploy-workflow -->
+        <profile>
+            <id>relghpkg</id>
+
+            <!--
+            <distributionManagement>
+                <repository>
+                    <id>ghpkg-YYY</id>
+                    <name>GitHub Packages (YYY)</name>
+                    <url>https://maven.pkg.github.com/olyutorskii/YYY</url>
+                </repository>
+            </distributionManagement>
+            -->
 
             <build>
                 <plugins>
@@ -657,8 +680,9 @@
                         <executions>
                             <execution>
                                 <id>attach-sources</id>
+                                <phase>package</phase>
                                 <goals>
-                                    <goal>jar-no-fork</goal>
+                                    <goal>jar</goal>
                                 </goals>
                             </execution>
                         </executions>
@@ -679,6 +703,7 @@
                         <executions>
                             <execution>
                                 <id>attach-javadocs</id>
+                                <phase>package</phase>
                                 <goals>
                                     <goal>jar</goal>
                                 </goals>
