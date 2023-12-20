@@ -44,7 +44,7 @@ jobs:
         run: mvn --show-version --batch-mode site --file pom.xml
 
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v2
+        uses: actions/upload-pages-artifact@v3
         with:
           # Upload Maven-report repository
           path: './target/site/'
