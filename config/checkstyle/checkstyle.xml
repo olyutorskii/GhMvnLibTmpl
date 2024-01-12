@@ -248,12 +248,13 @@
         <module name="JavadocTagContinuationIndentation" />
         <module name="JavadocType" />
         <module name="JavadocVariable">
-            <property name="scope" value="protected" />
+            <property name="scope" value="package" />
         </module>
         <module name="MissingJavadocMethod" />
         <module name="MissingJavadocPackage" />
         <module name="MissingJavadocType" />
         <module name="NonEmptyAtclauseDescription" />
+        <module name="RequireEmptyLineBeforeBlockTagGroup" />
         <module name="SingleLineJavadoc" />
         <module name="SummaryJavadocCheck" />
         <module name="WriteTag" />
@@ -273,8 +274,8 @@
 
         <module name="ArrayTypeStyle" />
         <module name="AvoidEscapedUnicodeCharacters">
-            <property name="allowEscapesForControlCharacters" value="true" />
             <property name="allowByTailComment" value="true" />
+            <property name="allowEscapesForControlCharacters" value="true" />
             <property name="allowIfAllCharactersEscaped" value="true" />
             <property name="allowNonPrintableEscapes" value="true" />
         </module>
