@@ -6,7 +6,7 @@
 
 <!--
     Checkstyle modules
-    for Checkstyle 10.10.0 or later
+    for Checkstyle 10.17.0 or later
 
     [ https://checkstyle.org/ ]
 
@@ -155,6 +155,7 @@
         <module name="AvoidDoubleBraceInitialization" />
         <module name="AvoidInlineConditionals" />
         <module name="AvoidNoArgumentSuperConstructorCall" />
+        <module name="ConstructorsDeclarationGrouping" />
         <module name="CovariantEquals" />
         <module name="DeclarationOrder" />
         <module name="DefaultComesLast" />
