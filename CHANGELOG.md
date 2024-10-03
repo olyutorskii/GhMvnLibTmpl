@@ -8,6 +8,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 
+## [0.0.7] - 2024-10-04
+
+### Fixed
+- Update Maven plugins.
+- Support JDK23.
+- Refine GitHub workflows.
+- Upgrade CodeQL level to security-extended.
+
+
 ## [0.0.5] - 2020-11-04
 
 ### Added
@@ -50,7 +59,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Initial Release
 
 
-[Unreleased]: https://github.com/olyutorskii/GhMvnLibTmpl/compare/v0.0.5...HEAD
+[Unreleased]: https://github.com/olyutorskii/GhMvnLibTmpl/compare/v0.0.7...HEAD
+[0.0.7]: https://github.com/olyutorskii/GhMvnLibTmpl/compare/v0.0.5...v0.0.7
 [0.0.5]: https://github.com/olyutorskii/GhMvnLibTmpl/compare/v0.0.3...v0.0.5
 [0.0.3]: https://github.com/olyutorskii/GhMvnLibTmpl/compare/v0.0.1...v0.0.3
 [0.0.1]: https://github.com/olyutorskii/GhMvnLibTmpl/releases/tag/v0.0.1
