@@ -33,6 +33,7 @@ Thumbs.db
 
 *.class
 hs_err_pid*
+replay_pid*
 
 
 ### Maven
@@ -81,7 +82,7 @@ hs_err_pid*
 /.vscode/
 
 
-# Mobile Tools for Java (J2ME)
+### Mobile Tools for Java (J2ME)
 .mtj.tmp/
 
 
