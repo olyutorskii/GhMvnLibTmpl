@@ -6,7 +6,7 @@
 
 <!--
     Checkstyle modules
-    for Checkstyle 10.17.0 or later
+    for Checkstyle 10.18.0 or later
 
     [ https://checkstyle.org/ ]
 
@@ -107,9 +107,9 @@
     <!-- Filters -->
 
         <module name="SuppressionCommentFilter" />
-        <module name="SuppressWithNearbyCommentFilter" />
         <!--module name="SuppressionXpathFilter" /-->
         <!--module name="SuppressionXpathSingleFilter" /-->
+        <module name="SuppressWithNearbyCommentFilter" />
 
 
     <!-- Annotations -->
@@ -145,6 +145,7 @@
         <module name="InterfaceIsType" />
         <module name="MutableException" />
         <module name="OneTopLevelClass" />
+        <module name="SealedShouldHavePermitsList" />
         <module name="ThrowsCount" />
         <module name="VisibilityModifier" />
 
@@ -183,6 +184,7 @@
         <module name="MagicNumber" />
         <module name="MatchXpath" />
         <module name="MissingCtor" />
+        <module name="MissingNullCaseInSwitch" />
         <module name="MissingSwitchDefault" />
         <module name="ModifiedControlVariable" />
         <module name="MultipleStringLiterals" />
@@ -215,6 +217,7 @@
         <module name="UnnecessarySemicolonInTryWithResources" />
         <module name="UnusedLocalVariable" />
         <module name="VariableDeclarationUsageDistance" />
+        <module name="WhenShouldBeUsed" />
 
 
     <!-- Imports -->
@@ -235,6 +238,7 @@
         <module name="InvalidJavadocPosition" />
         <module name="JavadocBlockTagLocation" />
         <module name="JavadocContentLocationCheck" />
+        <module name="JavadocLeadingAsteriskAlign" />
         <module name="JavadocMethod" />
         <module name="JavadocMissingLeadingAsterisk" />
         <module name="JavadocMissingWhitespaceAfterAsterisk" />
