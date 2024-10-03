@@ -33,6 +33,7 @@ Thumbs.db
 
 *.class
 hs_err_pid*
+replay_pid*
 
 
 ### Maven
@@ -79,6 +80,10 @@ hs_err_pid*
 ### Visual Studio Code
 
 /.vscode/
+
+
+### Mobile Tools for Java (J2ME)
+.mtj.tmp/
 
 
 ### Package Files

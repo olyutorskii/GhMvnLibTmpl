@@ -16,7 +16,7 @@
     <groupId>io.github.olyutorskii</groupId>
     <artifactId>ghmvnlibtmpl</artifactId>
 
-    <version>0.0.6-SNAPSHOT</version>
+    <version>0.0.7</version>
 
     <packaging>jar</packaging>
     <name>GhMvnLibTmpl</name>
@@ -62,7 +62,7 @@
     <modules/>
 
     <scm>
-        <connection>scm:git:git://github.com/olyutorskii/GhMvnLibTmpl.git</connection>
+        <connection>scm:git:https://github.com/olyutorskii/GhMvnLibTmpl.git</connection>
         <developerConnection>scm:git:git@github.com:olyutorskii/GhMvnLibTmpl.git</developerConnection>
         <url>https://github.com/olyutorskii/GhMvnLibTmpl</url>
     </scm>
@@ -76,9 +76,9 @@
     <distributionManagement/>
 
     <properties>
-        <maven.compiler.source>1.8</maven.compiler.source>
-        <maven.compiler.target>1.8</maven.compiler.target>
-        <!--maven.compiler.release>8</maven.compiler.release-->
+        <req.jdk>8</req.jdk>
+        <maven.compiler.source>${req.jdk}</maven.compiler.source>
+        <maven.compiler.target>${req.jdk}</maven.compiler.target>
 
         <maven.compiler.showDeprecation>true</maven.compiler.showDeprecation>
         <maven.compiler.showWarnings>true</maven.compiler.showWarnings>
@@ -88,8 +88,9 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
         <locale>en</locale>
-        <javadoc.locale>en</javadoc.locale>
         <spotbugs.jvmArgs>-Duser.language=en</spotbugs.jvmArgs>
+
+        <show>protected</show>
 
         <checkstyle.config.location>config/checkstyle/checkstyle.xml</checkstyle.config.location>
         <checkstyle.suppressions.location>config/checkstyle/checkstyle-suppressions.xml</checkstyle.suppressions.location>
@@ -107,9 +108,9 @@
     <dependencies>
 
         <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>4.13.2</version>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter</artifactId>
+            <version>5.11.1</version>
             <scope>test</scope>
         </dependency>
 
@@ -135,108 +136,108 @@
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-clean-plugin</artifactId>
-                    <version>3.2.0</version>
+                    <version>3.4.0</version>
                 </plugin>
 
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-enforcer-plugin</artifactId>
-                    <version>3.2.1</version>
+                    <version>3.5.0</version>
                 </plugin>
 
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-resources-plugin</artifactId>
-                    <version>3.3.0</version>
+                    <version>3.3.1</version>
                 </plugin>
 
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-compiler-plugin</artifactId>
-                    <version>3.11.0</version>
+                    <version>3.13.0</version>
                 </plugin>
 
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-surefire-plugin</artifactId>
-                    <version>3.0.0</version>
+                    <version>3.5.0</version>
                 </plugin>
 
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-surefire-report-plugin</artifactId>
-                    <version>3.0.0</version>
+                    <version>3.5.0</version>
                 </plugin>
 
                 <plugin>
                     <groupId>org.jacoco</groupId>
                     <artifactId>jacoco-maven-plugin</artifactId>
-                    <version>0.8.8</version>
+                    <version>0.8.12</version>
                 </plugin>
 
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-jar-plugin</artifactId>
-                    <version>3.3.0</version>
-                </plugin>
-
-                <plugin>
-                    <groupId>org.apache.maven.plugins</groupId>
-                    <artifactId>maven-source-plugin</artifactId>
-                    <version>3.2.1</version>
-                </plugin>
-
-                <plugin>
-                    <groupId>org.apache.maven.plugins</groupId>
-                    <artifactId>maven-install-plugin</artifactId>
-                    <version>3.1.0</version>
-                </plugin>
-
-                <plugin>
-                    <groupId>org.apache.maven.plugins</groupId>
-                    <artifactId>maven-deploy-plugin</artifactId>
-                    <version>3.1.0</version>
-                </plugin>
-
-                <plugin>
-                    <groupId>org.apache.maven.plugins</groupId>
-                    <artifactId>maven-site-plugin</artifactId>
-                    <version>4.0.0-M5</version>
-                </plugin>
-
-                <plugin>
-                    <groupId>org.apache.maven.plugins</groupId>
-                    <artifactId>maven-assembly-plugin</artifactId>
-                    <version>3.5.0</version>
-                </plugin>
-
-                <plugin>
-                    <groupId>org.apache.maven.plugins</groupId>
-                    <artifactId>maven-project-info-reports-plugin</artifactId>
                     <version>3.4.2</version>
                 </plugin>
 
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-source-plugin</artifactId>
+                    <version>3.3.1</version>
+                </plugin>
+
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-install-plugin</artifactId>
+                    <version>3.1.3</version>
+                </plugin>
+
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-deploy-plugin</artifactId>
+                    <version>3.1.3</version>
+                </plugin>
+
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-site-plugin</artifactId>
+                    <version>4.0.0-M16</version>
+                </plugin>
+
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-assembly-plugin</artifactId>
+                    <version>3.7.1</version>
+                </plugin>
+
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-project-info-reports-plugin</artifactId>
+                    <version>3.7.0</version>
+                </plugin>
+
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-javadoc-plugin</artifactId>
-                    <version>3.5.0</version>
+                    <version>3.10.1</version>
                 </plugin>
 
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-jxr-plugin</artifactId>
-                    <version>3.3.0</version>
+                    <version>3.5.0</version>
                 </plugin>
 
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-checkstyle-plugin</artifactId>
-                    <version>3.2.1</version>
+                    <version>3.5.0</version>
                     <dependencies>
                         <dependency>
                             <groupId>com.puppycrawl.tools</groupId>
                             <artifactId>checkstyle</artifactId>
-                            <version>10.9.1</version>
+                            <version>10.18.2</version>
                         </dependency>
                     </dependencies>
                 </plugin>
@@ -244,17 +245,17 @@
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-pmd-plugin</artifactId>
-                    <version>3.20.0</version>
+                    <version>3.25.0</version>
                     <dependencies>
                         <dependency>
                             <groupId>net.sourceforge.pmd</groupId>
                             <artifactId>pmd-core</artifactId>
-                            <version>6.55.0</version>
+                            <version>7.6.0</version>
                         </dependency>
                         <dependency>
                             <groupId>net.sourceforge.pmd</groupId>
                             <artifactId>pmd-java</artifactId>
-                            <version>6.55.0</version>
+                            <version>7.6.0</version>
                         </dependency>
                     </dependencies>
                 </plugin>
@@ -262,12 +263,12 @@
                 <plugin>
                     <groupId>com.github.spotbugs</groupId>
                     <artifactId>spotbugs-maven-plugin</artifactId>
-                    <version>4.7.3.2</version>
+                    <version>4.8.6.4</version>
                     <dependencies>
                         <dependency>
                             <groupId>com.github.spotbugs</groupId>
                             <artifactId>spotbugs</artifactId>
-                            <version>4.7.3</version>
+                            <version>4.8.6</version>
                         </dependency>
                     </dependencies>
                 </plugin>
@@ -275,7 +276,7 @@
                 <plugin>
                     <groupId>org.codehaus.mojo</groupId>
                     <artifactId>versions-maven-plugin</artifactId>
-                    <version>2.15.0</version>
+                    <version>2.17.1</version>
                 </plugin>
 
             </plugins>
@@ -325,7 +326,7 @@
                         <configuration>
                             <rules>
                                 <requireMavenVersion>
-                                    <version>[3.3.9,)</version>
+                                    <version>[3.6.3,)</version>
                                 </requireMavenVersion>
                                 <requireJavaVersion>
                                     <version>[1.8,)</version>
@@ -340,11 +341,9 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <configuration>
-                    <source>1.8</source>  <!-- for NetBeans IDE -->
-                    <target>1.8</target>
-                    <compilerArguments>
-                        <Xlint/>
-                    </compilerArguments>
+                    <compilerArgs>
+                        <arg>-Xlint</arg>
+                    </compilerArgs>
                     <showWarnings>true</showWarnings>
                     <showDeprecation>true</showDeprecation>
                 </configuration>
@@ -403,8 +402,7 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-javadoc-plugin</artifactId>
                 <configuration>
-                    <!-- for JDK11 javadoc -->
-                    <additionalJOption>-J-Duser.language=${javadoc.locale}</additionalJOption>
+                    <forceRootLocale>true</forceRootLocale>
                     <source>${maven.compiler.source}</source>
                     <notimestamp>true</notimestamp>
                     <header>${project.name} ${project.version} API</header>
@@ -412,7 +410,6 @@
                     <author>false</author>
                     <quiet>true</quiet>
                     <doclint>all</doclint>
-                    <show>protected</show>
                 </configuration>
             </plugin>
 
@@ -527,8 +524,7 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-javadoc-plugin</artifactId>
                 <configuration>
-                    <!-- for JDK11 javadoc -->
-                    <additionalJOption>-J-Duser.language=${javadoc.locale}</additionalJOption>
+                    <forceRootLocale>true</forceRootLocale>
                     <source>${maven.compiler.source}</source>
                     <notimestamp>true</notimestamp>
                     <header>${project.name} ${project.version} API</header>
@@ -536,7 +532,6 @@
                     <author>false</author>
                     <quiet>true</quiet>
                     <doclint>all</doclint>
-                    <show>protected</show>
                 </configuration>
                 <reportSets>
                     <reportSet>
@@ -570,15 +565,8 @@
             </plugin>
 
             <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-checkstyle-plugin</artifactId>
-                <reportSets>
-                    <reportSet>
-                        <reports>
-                            <report>checkstyle</report>
-                        </reports>
-                    </reportSet>
-                </reportSets>
+                <groupId>com.github.spotbugs</groupId>
+                <artifactId>spotbugs-maven-plugin</artifactId>
             </plugin>
 
             <plugin>
@@ -599,26 +587,77 @@
                 </reportSets>
             </plugin>
 
-            <plugin>
-                <groupId>com.github.spotbugs</groupId>
-                <artifactId>spotbugs-maven-plugin</artifactId>
-            </plugin>
-
         </plugins>
 
     </reporting>
 
     <profiles>
 
+        <!-- JDK9 or later -->
         <profile>
-            <id>release-profile</id>
-
+            <id>jdk9later</id>
             <activation>
-                <property>
-                    <name>performRelease</name>
-                    <value>true</value>
-                </property>
+                <jdk>[9</jdk>
             </activation>
+            <properties>
+                <!-- -release option(javac) require JDK9+ -->
+                <maven.compiler.release>${req.jdk}</maven.compiler.release>
+            </properties>
+        </profile>
+
+        <!-- JDK11 or later -->
+        <profile>
+            <id>jdk11later</id>
+            <activation>
+                <jdk>[11</jdk>
+            </activation>
+            <reporting>
+                <plugins>
+                    <!-- Checkstyle 10.0+ require JDK11+ -->
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-checkstyle-plugin</artifactId>
+                        <reportSets>
+                            <reportSet>
+                                <reports>
+                                    <report>checkstyle</report>
+                                </reports>
+                            </reportSet>
+                        </reportSets>
+                    </plugin>
+                </plugins>
+            </reporting>
+        </profile>
+
+        <!-- refer library from GitHub Package with GitHub-action-build-workflow -->
+        <profile>
+            <id>refghpkg</id>
+
+            <repositories>
+                <!--
+                <repository>
+                    <id>ghpkg-XXX</id>
+                    <name>GitHub Packages (XXX)</name>
+                    <url>https://maven.pkg.github.com/olyutorskii/XXX</url>
+                </repository>
+                -->
+            </repositories>
+
+        </profile>
+
+        <!-- release to GitHub-package by GitHub-action-deploy-workflow -->
+        <profile>
+            <id>relghpkg</id>
+
+            <!--
+            <distributionManagement>
+                <repository>
+                    <id>ghpkg-YYY</id>
+                    <name>GitHub Packages (YYY)</name>
+                    <url>https://maven.pkg.github.com/olyutorskii/YYY</url>
+                </repository>
+            </distributionManagement>
+            -->
 
             <build>
                 <plugins>
@@ -638,8 +677,9 @@
                         <executions>
                             <execution>
                                 <id>attach-sources</id>
+                                <phase>package</phase>
                                 <goals>
-                                    <goal>jar-no-fork</goal>
+                                    <goal>jar</goal>
                                 </goals>
                             </execution>
                         </executions>
@@ -660,6 +700,7 @@
                         <executions>
                             <execution>
                                 <id>attach-javadocs</id>
+                                <phase>package</phase>
                                 <goals>
                                     <goal>jar</goal>
                                 </goals>

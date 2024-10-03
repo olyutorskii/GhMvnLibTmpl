@@ -11,14 +11,44 @@ permissions:
   pages: write
   id-token: write
 
-# Allow one concurrent deployment
+# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
+# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
 concurrency:
   group: "pages"
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 jobs:
 
+  # Build job
   build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up JDK
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: 21
+          cache: maven
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Build document with Maven
+        run: mvn --show-version --batch-mode --file pom.xml clean site
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          # Upload Maven-report repository
+          path: './target/site/'
+
+  # Deployment job
+  deploy:
 
     environment:
       name: github-pages
@@ -26,37 +56,11 @@ jobs:
 
     runs-on: ubuntu-latest
 
+    needs: build
+
     steps:
-      - name: Checkout
-        uses: actions/checkout@v3.4.0
-
-      - name: Set up JDK
-        uses: actions/setup-java@v3
-        with:
-          distribution: 'adopt'
-          java-version: 17
-
-      - name: Setup Pages
-        uses: actions/configure-pages@v3
-
-      - name: Cache Maven packages
-        uses: actions/cache@v3
-        with:
-          path: ~/.m2
-          key: ${{ runner.os }}-m2-${{ hashFiles('**/pom.xml') }}
-          restore-keys: ${{ runner.os }}-m2
-
-      - name: Build document with Maven
-        run: mvn --show-version -B site --file pom.xml
-
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v1
-        with:
-          # Upload Maven-report repository
-          path: './target/site/'
-
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v1
+        uses: actions/deploy-pages@v4
 
 ### EOF ###
