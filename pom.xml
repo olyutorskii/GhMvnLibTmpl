@@ -16,7 +16,7 @@
     <groupId>io.github.olyutorskii</groupId>
     <artifactId>ghmvnlibtmpl</artifactId>
 
-    <version>0.0.7</version>
+    <version>0.0.9</version>
 
     <packaging>jar</packaging>
     <name>GhMvnLibTmpl</name>
@@ -110,7 +110,7 @@
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter</artifactId>
-            <version>5.11.1</version>
+            <version>5.11.2</version>
             <scope>test</scope>
         </dependency>
 

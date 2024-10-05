@@ -8,6 +8,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 
+## [0.0.9] - 2024-10-05
+
+### Changed
+- Modify trigger of build workflow.
+
+
 ## [0.0.7] - 2024-10-04
 
 ### Fixed
@@ -59,7 +65,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Initial Release
 
 
-[Unreleased]: https://github.com/olyutorskii/GhMvnLibTmpl/compare/v0.0.7...HEAD
+[Unreleased]: https://github.com/olyutorskii/GhMvnLibTmpl/compare/v0.0.9...HEAD
+[0.0.9]: https://github.com/olyutorskii/GhMvnLibTmpl/compare/v0.0.7...v0.0.9
 [0.0.7]: https://github.com/olyutorskii/GhMvnLibTmpl/compare/v0.0.5...v0.0.7
 [0.0.5]: https://github.com/olyutorskii/GhMvnLibTmpl/compare/v0.0.3...v0.0.5
 [0.0.3]: https://github.com/olyutorskii/GhMvnLibTmpl/compare/v0.0.1...v0.0.3
