@@ -79,6 +79,7 @@
         <req.jdk>8</req.jdk>
         <maven.compiler.source>${req.jdk}</maven.compiler.source>
         <maven.compiler.target>${req.jdk}</maven.compiler.target>
+        <maven.compiler.release>${req.jdk}</maven.compiler.release>
 
         <maven.compiler.showDeprecation>true</maven.compiler.showDeprecation>
         <maven.compiler.showWarnings>true</maven.compiler.showWarnings>
