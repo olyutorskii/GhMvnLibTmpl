@@ -268,7 +268,7 @@
                         <dependency>
                             <groupId>com.github.spotbugs</groupId>
                             <artifactId>spotbugs</artifactId>
-                            <version>4.8.6</version>
+                            <version>4.9.0</version>
                         </dependency>
                     </dependencies>
                 </plugin>
@@ -565,11 +565,6 @@
             </plugin>
 
             <plugin>
-                <groupId>com.github.spotbugs</groupId>
-                <artifactId>spotbugs-maven-plugin</artifactId>
-            </plugin>
-
-            <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-pmd-plugin</artifactId>
                 <configuration>
@@ -613,6 +608,7 @@
             </activation>
             <reporting>
                 <plugins>
+
                     <!-- Checkstyle 10.0+ require JDK11+ -->
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
@@ -625,6 +621,13 @@
                             </reportSet>
                         </reportSets>
                     </plugin>
+
+                    <!-- SpotBugs 4.9.0+ require JDK11+ -->
+                    <plugin>
+                        <groupId>com.github.spotbugs</groupId>
+                        <artifactId>spotbugs-maven-plugin</artifactId>
+                    </plugin>
+
                 </plugins>
             </reporting>
         </profile>
