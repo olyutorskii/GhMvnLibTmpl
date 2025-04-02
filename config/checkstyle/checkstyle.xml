@@ -6,7 +6,7 @@
 
 <!--
     Checkstyle modules
-    for Checkstyle 10.18.0 or later
+    for Checkstyle 10.23.0 or later
 
     [ https://checkstyle.org/ ]
 
@@ -253,7 +253,7 @@
         <module name="JavadocTagContinuationIndentation" />
         <module name="JavadocType" />
         <module name="JavadocVariable">
-            <property name="scope" value="package" />
+            <property name="accessModifiers" value="public, protected, package" />
         </module>
         <module name="MissingJavadocMethod" />
         <module name="MissingJavadocPackage" />
