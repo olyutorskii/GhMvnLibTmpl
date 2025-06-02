@@ -6,7 +6,7 @@
 
 <!--
     Checkstyle modules
-    for Checkstyle 10.24.0 or later
+    for Checkstyle 10.25.0 or later
 
     [ https://checkstyle.org/ ]
 
@@ -211,6 +211,7 @@
         <module name="StringLiteralEquality" />
         <module name="SuperClone" />
         <module name="SuperFinalize" />
+        <module name="UnnecessaryNullCheckWithInstanceOf" />
         <module name="UnnecessaryParentheses" />
         <module name="UnnecessarySemicolonAfterOuterTypeDeclaration" />
         <module name="UnnecessarySemicolonAfterTypeMemberDeclaration" />
