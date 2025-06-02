@@ -6,7 +6,7 @@
 
 <!--
     Checkstyle modules
-    for Checkstyle 10.23.0 or later
+    for Checkstyle 10.24.0 or later
 
     [ https://checkstyle.org/ ]
 
@@ -40,6 +40,7 @@
         <property name="header" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt;" />
         <property name="fileExtensions" value="xml" />
     </module>
+    <module name="MultiFileRegexpHeader" />
     <module name="RegexpHeader">
         <property name="header" value="^/\*$\n^ \*( .*)?$\n^ \*/$\n" />
         <property name="multiLines" value="2" />
