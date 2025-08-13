@@ -238,7 +238,7 @@
                         <dependency>
                             <groupId>com.puppycrawl.tools</groupId>
                             <artifactId>checkstyle</artifactId>
-                            <version>10.26.1</version>
+                            <version>11.0.0</version>
                         </dependency>
                     </dependencies>
                 </plugin>
@@ -610,7 +610,26 @@
             <reporting>
                 <plugins>
 
-                    <!-- Checkstyle 10.0+ require JDK11+ -->
+                    <!-- SpotBugs 4.9.0+ require JDK11+ -->
+                    <plugin>
+                        <groupId>com.github.spotbugs</groupId>
+                        <artifactId>spotbugs-maven-plugin</artifactId>
+                    </plugin>
+
+                </plugins>
+            </reporting>
+        </profile>
+
+        <!-- JDK17 or later -->
+        <profile>
+            <id>jdk17later</id>
+            <activation>
+                <jdk>[17</jdk>
+            </activation>
+            <reporting>
+                <plugins>
+
+                    <!-- Checkstyle 11.0+ require JDK17+ -->
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-checkstyle-plugin</artifactId>
@@ -621,12 +640,6 @@
                                 </reports>
                             </reportSet>
                         </reportSets>
-                    </plugin>
-
-                    <!-- SpotBugs 4.9.0+ require JDK11+ -->
-                    <plugin>
-                        <groupId>com.github.spotbugs</groupId>
-                        <artifactId>spotbugs-maven-plugin</artifactId>
                     </plugin>
 
                 </plugins>
