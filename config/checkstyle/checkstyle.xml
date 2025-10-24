@@ -6,7 +6,7 @@
 
 <!--
     Checkstyle modules
-    for Checkstyle 10.25.0 or later
+    for Checkstyle 12.1.0 or later
 
     [ https://checkstyle.org/ ]
 
@@ -289,6 +289,7 @@
         <module name="CommentsIndentation" />
         <module name="DescendantToken" />
         <module name="FinalParameters" />
+        <module name="HexLiteralCase" />
         <module name="Indentation">
             <property name="caseIndent" value="0" />
         </module>
