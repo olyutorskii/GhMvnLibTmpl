@@ -29,6 +29,8 @@
         <exclude name="ShortVariable" />
         <exclude name="UnnecessaryModifier" />
         <exclude name="UnnecessaryReturn" />
+        <exclude name="UseUnderscoresInNumericLiterals" />
+        <exclude name="VariableCanBeInlined" />
     </rule>
     <rule ref="category/java/codestyle.xml/ControlStatementBraces" >
         <properties>
@@ -52,13 +54,19 @@
     <rule ref="category/java/documentation.xml/CommentSize" >
         <properties>
             <property name="maxLines" value="25"/>
-            <property name="maxLineLength" value="100"/>
+            <property name="maxLineLength" value="128"/>
         </properties>
     </rule>
 
     <rule ref="category/java/errorprone.xml" >
         <exclude name="AvoidLiteralsInIfCondition" />
         <exclude name="NonSerializableClass" />
+    </rule>
+
+    <rule ref="category/java/errorprone.xml/AssignmentInOperand" >
+        <properties>
+            <property name="allowIncrementDecrement" value="true"/>
+        </properties>
     </rule>
 
     <rule ref="category/java/multithreading.xml" />
