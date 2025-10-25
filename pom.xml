@@ -91,6 +91,9 @@
         <locale>en</locale>
         <spotbugs.jvmArgs>-Duser.language=en</spotbugs.jvmArgs>
 
+        <!-- for "-J-Duser.language=" compiler option -->
+        <maven.compiler.fork>true</maven.compiler.fork>
+
         <show>protected</show>
 
         <checkstyle.config.location>config/checkstyle/checkstyle.xml</checkstyle.config.location>
@@ -343,6 +346,7 @@
                 <artifactId>maven-compiler-plugin</artifactId>
                 <configuration>
                     <compilerArgs>
+                        <arg>-J-Duser.language=en</arg>
                         <arg>-Xlint</arg>
                     </compilerArgs>
                     <showWarnings>true</showWarnings>
