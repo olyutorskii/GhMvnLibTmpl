@@ -111,7 +111,7 @@
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter</artifactId>
-            <version>5.14.0</version>
+            <version>6.0.0</version>
             <scope>test</scope>
         </dependency>
 
@@ -593,7 +593,7 @@
         <profile>
             <id>jdk9later</id>
             <activation>
-                <jdk>[9</jdk>
+                <jdk>[9,)</jdk>
             </activation>
             <properties>
                 <!-- -release option(javac) require JDK9+ -->
@@ -605,7 +605,7 @@
         <profile>
             <id>jdk11later</id>
             <activation>
-                <jdk>[11</jdk>
+                <jdk>[11,)</jdk>
             </activation>
             <reporting>
                 <plugins>
@@ -620,20 +620,28 @@
             </reporting>
         </profile>
 
-        <!-- JDK17 or later -->
+        <!-- before JDK17 -->
         <profile>
-            <id>jdk17later</id>
+            <id>jdk17before</id>
             <activation>
-                <jdk>[17</jdk>
+                <jdk>(,17)</jdk>
             </activation>
             <dependencies>
                 <dependency>
                     <groupId>org.junit.jupiter</groupId>
                     <artifactId>junit-jupiter</artifactId>
-                    <version>6.0.0</version>
+                    <version>5.14.0</version>
                     <scope>test</scope>
                 </dependency>
             </dependencies>
+        </profile>
+
+        <!-- JDK17 or later -->
+        <profile>
+            <id>jdk17later</id>
+            <activation>
+                <jdk>[17,)</jdk>
+            </activation>
             <reporting>
                 <plugins>
 
