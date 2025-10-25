@@ -626,6 +626,14 @@
             <activation>
                 <jdk>[17</jdk>
             </activation>
+            <dependencies>
+                <dependency>
+                    <groupId>org.junit.jupiter</groupId>
+                    <artifactId>junit-jupiter</artifactId>
+                    <version>6.0.0</version>
+                    <scope>test</scope>
+                </dependency>
+            </dependencies>
             <reporting>
                 <plugins>
 
