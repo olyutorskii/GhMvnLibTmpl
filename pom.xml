@@ -241,7 +241,7 @@
                         <dependency>
                             <groupId>com.puppycrawl.tools</groupId>
                             <artifactId>checkstyle</artifactId>
-                            <version>12.3.0</version>
+                            <version>13.0.0</version>
                         </dependency>
                     </dependencies>
                 </plugin>
@@ -640,16 +640,16 @@
             </dependencies>
         </profile>
 
-        <!-- JDK17 or later -->
+        <!-- JDK21 or later -->
         <profile>
-            <id>jdk17later</id>
+            <id>jdk21later</id>
             <activation>
-                <jdk>[17,)</jdk>
+                <jdk>[21,)</jdk>
             </activation>
             <reporting>
                 <plugins>
 
-                    <!-- Checkstyle 11.0+ require JDK17+ -->
+                    <!-- Checkstyle 13.0+ require JDK21+ -->
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-checkstyle-plugin</artifactId>
