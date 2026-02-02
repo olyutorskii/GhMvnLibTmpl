@@ -6,7 +6,7 @@
 
 <!--
     Checkstyle modules
-    for Checkstyle 12.1.0 or later
+    for Checkstyle 13.1.0 or later
 
     [ https://checkstyle.org/ ]
 
@@ -120,6 +120,7 @@
         <module name="AnnotationUseStyle" />
         <module name="MissingDeprecated" />
         <module name="MissingOverride" />
+        <module name="MissingOverrideOnRecordAccessor" />
         <module name="PackageAnnotation" />
         <module name="SuppressWarnings" />
         <module name="SuppressWarningsHolder" />
