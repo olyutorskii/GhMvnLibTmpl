@@ -2,7 +2,7 @@
 
 <!--
     Custom rule set
-    for PMD [ https://pmd.github.io/ ] 7.17.0 or later
+    for PMD [ https://pmd.github.io/ ] 7.21.0 or later
 
     Copyright(c) 2019 olyutorskii
 -->
@@ -48,7 +48,7 @@
     <rule ref="category/java/documentation.xml" />
     <rule ref="category/java/documentation.xml/CommentRequired" >
         <properties>
-            <property name="fieldCommentRequirement" value="Ignored"/>
+            <property name="fieldCommentRequirement" value="ignored"/>
         </properties>
     </rule>
     <rule ref="category/java/documentation.xml/CommentSize" >
