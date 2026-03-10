@@ -6,7 +6,7 @@
 
 <!--
     Checkstyle modules
-    for Checkstyle 13.2.0 or later
+    for Checkstyle 13.3.0 or later
 
     [ https://checkstyle.org/ ]
 
@@ -55,6 +55,7 @@
 
     <!-- Miscellaneous -->
 
+    <module name="LineEnding" />
     <module name="NewlineAtEndOfFile">
         <property name="fileExtensions" value="java, properties, xml, xsd, md, txt" />
     </module>
@@ -219,6 +220,7 @@
         <module name="UnnecessarySemicolonInEnumeration" />
         <module name="UnnecessarySemicolonInTryWithResources" />
         <module name="UnusedLocalVariable" />
+        <module name="UseEnhancedSwitch" />
         <module name="VariableDeclarationUsageDistance" />
         <module name="WhenShouldBeUsed" />
 
@@ -320,6 +322,7 @@
         <module name="CatchParameterName" />
         <module name="ClassTypeParameterName" />
         <module name="ConstantName" />
+        <module name="GoogleNonConstantFieldName" />
         <module name="IllegalIdentifierName" />
         <module name="InterfaceTypeParameterName" />
         <module name="LambdaParameterName" />
