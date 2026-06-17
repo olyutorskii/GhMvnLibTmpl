@@ -6,7 +6,7 @@
 
 <!--
     Checkstyle modules
-    for Checkstyle 13.3.0 or later
+    for Checkstyle 13.5.0 or later
 
     [ https://checkstyle.org/ ]
 
@@ -221,6 +221,7 @@
         <module name="UnnecessarySemicolonInEnumeration" />
         <module name="UnnecessarySemicolonInTryWithResources" />
         <module name="UnusedLocalVariable" />
+        <module name="UnusedTryResourceShouldBeUnnamed" />
         <module name="UseEnhancedSwitch" />
         <module name="VariableDeclarationUsageDistance" />
         <module name="WhenShouldBeUsed" />
