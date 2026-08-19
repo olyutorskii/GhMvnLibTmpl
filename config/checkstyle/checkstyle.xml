@@ -6,7 +6,7 @@
 
 <!--
     Checkstyle modules
-    for Checkstyle 13.8.0 or later
+    for Checkstyle 13.10.0 or later
 
     [ https://checkstyle.org/ ]
 
@@ -244,6 +244,7 @@
     <!-- Javadoc Comments -->
 
         <module name="AtclauseOrder" />
+        <module name="IllegalBlockTag" />
         <module name="InvalidJavadocPosition" />
         <module name="JavadocBlockTagLocation" />
         <module name="JavadocContentLocationCheck" />
@@ -252,6 +253,7 @@
         <module name="JavadocMissingLeadingAsterisk" />
         <module name="JavadocMissingWhitespaceAfterAsterisk" />
         <module name="JavadocParagraph" />
+        <module name="JavadocRegexp" />
         <module name="JavadocTagContinuationIndentation" />
         <module name="JavadocType" />
         <module name="JavadocVariable">
@@ -321,6 +323,7 @@
         <module name="CatchParameterName" />
         <module name="ClassTypeParameterName" />
         <module name="ConstantName" />
+        <module name="GoogleMethodName" />
         <module name="GoogleNonConstantFieldName" />
         <module name="IllegalIdentifierName" />
         <module name="InterfaceTypeParameterName" />
@@ -371,6 +374,7 @@
 
     <!-- Whitespace -->
 
+        <module name="ArrayBracketNoWhitespace" />
         <module name="EmptyForInitializerPad" />
         <module name="EmptyForIteratorPad" />
         <module name="EmptyLineSeparator">
