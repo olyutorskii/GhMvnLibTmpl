@@ -6,7 +6,7 @@
 
 <!--
     Checkstyle modules
-    for Checkstyle 13.10.0 or later
+    for Checkstyle 13.11.0 or later
 
     [ https://checkstyle.org/ ]
 
@@ -263,6 +263,7 @@
         <module name="MissingJavadocPackage" />
         <module name="MissingJavadocType" />
         <module name="NonEmptyAtclauseDescription" />
+        <module name="PreferLiteralJavadocInlineTag" />
         <module name="RequireEmptyLineBeforeBlockTagGroup" />
         <module name="SingleLineJavadoc" />
         <module name="SummaryJavadocCheck" />
