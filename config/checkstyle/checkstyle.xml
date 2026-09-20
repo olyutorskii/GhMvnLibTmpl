@@ -168,6 +168,7 @@
         <module name="EqualsAvoidNull" />
         <module name="EqualsHashCode" />
         <module name="ExplicitInitialization" />
+        <module name="ExpressionOverBlockLambda" />
         <module name="FallThrough" />
         <module name="FinalLocalVariable" />
         <module name="HiddenField">
@@ -223,6 +224,7 @@
         <module name="UnnecessarySemicolonInTryWithResources" />
         <module name="UnnecessaryTypeArgumentsWithRecordPattern" />
         <module name="UnusedLocalVariable" />
+        <module name="UnusedPrivateField" />
         <module name="UnusedTryResourceShouldBeUnnamed" />
         <module name="UseEnhancedSwitch" />
         <module name="VariableDeclarationUsageDistance" />
@@ -231,13 +233,16 @@
 
     <!-- Imports -->
 
+        <module name="AvoidModuleImport" />
         <module name="AvoidStarImport" />
         <module name="AvoidStaticImport" />
         <module name="CustomImportOrder" />
         <module name="IllegalImport" />
         <!--module name="ImportControl" /-->
         <module name="ImportOrder" />
+        <module name="ModuleImportOrder" />
         <module name="RedundantImport" />
+        <module name="UnnecessaryFullyQualifiedType" />
         <module name="UnusedImports" />
 
 
@@ -245,16 +250,25 @@
 
         <module name="AtclauseOrder" />
         <module name="IllegalBlockTag" />
+        <module name="InappropriateJavadocBlockTagsOnField" />
+        <module name="InappropriateJavadocBlockTagsOnPackage" />
+        <module name="InappropriateJavadocBlockTagsOnType" />
         <module name="InvalidJavadocPosition" />
         <module name="JavadocBlockTagLocation" />
         <module name="JavadocContentLocationCheck" />
+        <module name="JavadocEndCommentDelimiter" />
         <module name="JavadocLeadingAsteriskAlign" />
+        <module name="JavadocLinkFirstOccurrence" />
+        <module name="JavadocLinkWellKnownApi" />
         <module name="JavadocMethod" />
         <module name="JavadocMissingLeadingAsterisk" />
         <module name="JavadocMissingWhitespaceAfterAsterisk" />
+        <module name="JavadocNoErrorInThrowsTag" />
         <module name="JavadocParagraph" />
+        <module name="JavadocParamOrder" />
         <module name="JavadocRegexp" />
         <module name="JavadocTagContinuationIndentation" />
+        <module name="JavadocThrowsOrder" />
         <module name="JavadocType" />
         <module name="JavadocVariable">
             <property name="accessModifiers" value="public, protected, package" />
@@ -263,6 +277,7 @@
         <module name="MissingJavadocPackage" />
         <module name="MissingJavadocType" />
         <module name="NonEmptyAtclauseDescription" />
+        <module name="PreferCodeOrSnippetJavadocInlineTag" />
         <module name="PreferLiteralJavadocInlineTag" />
         <module name="RequireEmptyLineBeforeBlockTagGroup" />
         <module name="SingleLineJavadoc" />
@@ -315,6 +330,11 @@
         <module name="InterfaceMemberImpliedModifier" />
         <module name="ModifierOrder" />
         <module name="RedundantModifier" />
+
+
+    <!-- Modules -->
+
+        <module name="ModuleDirectiveOrder" />
 
 
     <!-- Naming Conventions -->
