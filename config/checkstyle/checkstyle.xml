@@ -6,7 +6,7 @@
 
 <!--
     Checkstyle modules
-    for Checkstyle 13.11.0 or later
+    for Checkstyle 14.2.0 or later
 
     [ https://checkstyle.org/ ]
 
@@ -22,16 +22,6 @@
     <!--property name="localeLanguage" value="ja" /-->
     <property name="fileExtensions" value="java, properties, xml, xsd, md, txt" />
     <property name="severity" value="error" />
-
-
-    <!-- Filters -->
-
-    <module name="SeverityMatchFilter" />
-    <!--module name="SuppressionFilter" /-->
-    <!--module name="SuppressionSingleFilter" /-->
-    <module name="SuppressWarningsFilter" />
-    <module name="SuppressWithNearbyTextFilter" />
-    <module name="SuppressWithPlainTextCommentFilter" />
 
 
     <!-- Headers -->
@@ -92,6 +82,18 @@
 
     <module name="FileTabCharacter" />
 
+
+    <!-- Filters -->
+
+    <module name="SeverityMatchFilter" />
+    <!--module name="SuppressionFilter" /-->
+    <!--module name="SuppressionSingleFilter" /-->
+    <module name="SuppressWarningsFilter" />
+    <module name="SuppressWithNearbyTextFilter" />
+    <module name="SuppressWithPlainTextCommentFilter" />
+
+
+    <!-- File Filters -->
 
     <module name="BeforeExecutionExclusionFileFilter">
         <property name="fileNamePattern" value="module\-info\.java$" />
@@ -207,6 +209,7 @@
         <module name="OverloadMethodsDeclarationOrder" />
         <module name="PackageDeclaration" />
         <module name="ParameterAssignment" />
+        <module name="PatternVariableAssignment" />
         <module name="RequireThis">
             <property name="checkMethods" value="false" />
             <property name="validateOnlyOverlapping" value="false" />
@@ -217,6 +220,7 @@
         <module name="StringLiteralEquality" />
         <module name="SuperClone" />
         <module name="SuperFinalize" />
+        <module name="TextBlockGoogleStyleFormatting" />
         <module name="UnnecessaryNullCheckWithInstanceOf" />
         <module name="UnnecessaryParentheses" />
         <module name="UnnecessaryPermitsClause" />
@@ -225,6 +229,8 @@
         <module name="UnnecessarySemicolonInEnumeration" />
         <module name="UnnecessarySemicolonInTryWithResources" />
         <module name="UnnecessaryTypeArgumentsWithRecordPattern" />
+        <module name="UnusedCatchParameterShouldBeUnnamed" />
+        <module name="UnusedLambdaParameterShouldBeUnnamed" />
         <module name="UnusedLocalVariable" />
         <module name="UnusedPrivateField" />
         <module name="UnusedTryResourceShouldBeUnnamed" />
@@ -257,7 +263,7 @@
         <module name="InappropriateJavadocBlockTagsOnType" />
         <module name="InvalidJavadocPosition" />
         <module name="JavadocBlockTagLocation" />
-        <module name="JavadocContentLocationCheck" />
+        <module name="JavadocContentLocation" />
         <module name="JavadocEndCommentDelimiter" />
         <module name="JavadocLeadingAsteriskAlign" />
         <module name="JavadocLinkFirstOccurrence" />
@@ -284,7 +290,7 @@
         <module name="PreferLiteralJavadocInlineTag" />
         <module name="RequireEmptyLineBeforeBlockTagGroup" />
         <module name="SingleLineJavadoc" />
-        <module name="SummaryJavadocCheck" />
+        <module name="SummaryJavadoc" />
         <module name="WriteTag" />
 
 
