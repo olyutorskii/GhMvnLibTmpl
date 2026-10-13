@@ -36,7 +36,7 @@
     <suppress files="" checks="ImportControl" />
 
     <!-- Javadoc Comments -->
-    <suppress files="" checks="SummaryJavadocCheck" />
+    <suppress files="" checks="SummaryJavadoc" />
 
     <!-- Miscellaneous -->
     <suppress files="" checks="FinalParameters" />
