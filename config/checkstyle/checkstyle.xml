@@ -133,6 +133,7 @@
         <module name="AvoidNestedBlocks" />
         <module name="EmptyBlock" />
         <module name="EmptyCatchBlock" />
+        <module name="GoogleRightCurly" />
         <module name="LeftCurly" />
         <module name="NeedBraces">
             <property name="allowSingleLineStatement" value="true" />
@@ -218,6 +219,7 @@
         <module name="SuperFinalize" />
         <module name="UnnecessaryNullCheckWithInstanceOf" />
         <module name="UnnecessaryParentheses" />
+        <module name="UnnecessaryPermitsClause" />
         <module name="UnnecessarySemicolonAfterOuterTypeDeclaration" />
         <module name="UnnecessarySemicolonAfterTypeMemberDeclaration" />
         <module name="UnnecessarySemicolonInEnumeration" />
@@ -267,6 +269,7 @@
         <module name="JavadocParagraph" />
         <module name="JavadocParamOrder" />
         <module name="JavadocRegexp" />
+        <module name="JavadocSeeTagOrder" />
         <module name="JavadocTagContinuationIndentation" />
         <module name="JavadocThrowsOrder" />
         <module name="JavadocType" />
@@ -314,6 +317,7 @@
         <module name="MultilineCommentLeadingAsteriskPresence" />
         <module name="NoCodeInFile" />
         <module name="NumericalPrefixesInfixesSuffixesCharacterCase" />
+        <module name="OpenjdkMethodThrowsAlignment" />
         <module name="OuterTypeFilename" />
         <module name="TodoComment">
             <property name="format" value="TODO" />
