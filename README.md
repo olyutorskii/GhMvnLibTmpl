@@ -23,7 +23,7 @@ with JDK + Maven + Git + GitHub (and Netbeans etc.).
 
 ## How to build ##
 
-* GhMvnLibTmpl needs to use [Maven 3.3.9+](https://maven.apache.org/)
+* GhMvnLibTmpl needs to use [Maven 3.8.9+](https://maven.apache.org/)
 and JDK 1.8+ to be built.
 
 * GhMvnLibTmpl runtime does not depend on any other library at all.
